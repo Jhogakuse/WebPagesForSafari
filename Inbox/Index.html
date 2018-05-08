@@ -1,34 +1,99 @@
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+	<meta http-equiv="EXPIRES" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Inbox</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
+	<script src="Scripts/jquery-3.1.1.min.js"></script>
+	<script src="Scripts/main.js"></script>
+	<link rel="stylesheet" href="Styles/main.css">
+	<!--<link rel="stylesheet" href="Styles/normalize.css">-->
+	<link rel="stylesheet" href="Styles/skeleton.css">
+	<link rel="stylesheet" href="Styles/material-design-iconic-font.min.css">
+</head>
+<body>
+	<div id="container" class="sign-up">
+		<h1 class="sign-up-title">Login</h1>
+		<div class="sign-row">
+			<div class="col col-span-1">
+				<button class="sign-up-button"><i class="zmdi zmdi-edit"></i> <span>Nuevo</span></button>
+				<div class="labels-email cursor"><i class="zmdi zmdi-email"></i><span> Recibidos</span></div>
+				<div class="labels-email cursor"><i class="zmdi zmdi-star"></i><span> Importantes</span></div>
+				<div class="labels-email cursor"><i class="zmdi zmdi-mail-send"></i><span> Enviados</span></div>
+				<div class="labels-email cursor"><i class="zmdi zmdi-delete"></i><span> Eliminados</span></div>
+				<div class="labels-email cursor"><i class="zmdi zmdi-bug"></i><span> Spam</span></div>
+			</div>
+			<div class="col col-span-3">
+				<div class="row">
+					<div class="col col-span-2">
+						<input type="text" class="sign-up-input" placeholder="Buscar" autofocus/>
+						<div class="scrollbar style-1">
+							<div class="col message cursor"><span>Randy, me (5)Last pic over my village  –  Yeah I'd like that! Do you remember the video ... 5:01 am</span></div>
+							<div class="col message cursor"><span>Lucas Kriebel (via Twitter)Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!  ... 11:49 am</span></div>
+							<div class="col message cursor"><span>Conceptboard Please complete your Conceptboard signup  –  You recently created a Conceptboard account, ... 11:45 am</span></div>
+							<div class="col message cursor"><span>Andrew ZimmerMochila Beta: Subscription Confirmed  –  You've been confirmed! Welcome to the ruling ... Mar 8</span></div>
+							<div class="col message cursor"><span>Erik, me (5) Regarding our meeting  –  That's great, see you on Thursday! Feb 24</span></div>
+						</div>
+					</div>
+					<div class="col fixed-width">
+						<div>
+							<h5>
+								<span class="cursor"><i class="zmdi zmdi-email-open"></i></span>
+								<span class="cursor"><i class="zmdi zmdi-delete"></i></span>
+								<span class="cursor"><i class="zmdi zmdi-mail-reply"></i></span>
+								<span class="cursor"><i class="zmdi zmdi-mail-reply-all"></i></span>
+								<span class="cursor"><i class="zmdi zmdi-more"></i></span>
+							</h5>
+						</div>
+						<div class="scrollbar style-1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+							<div class="email-detail">
+								<img alt="" class="email-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
+								<span class="email-detail_from-to">
+									<span class="bold">Peter Gregor &nbsp;</span>
+									<span>to &nbsp;</span>
+								<span class="bold">Jessica Larson</span></span>
+								<span class="email-detail_time">14:10</span>
+								<h4 class="email-detail_title">
+									Design for health proyect
+								</h4>
+								<div class="email-description">
+									<p>
+										Hi Jessica,
+									</p>
+									<p>
+										I love your UI design work, and I'd like to talk with  you about possibly revamping the UI on our desktop application. Can we jump on Skype to discuss it when you have some time?
+									</p>
+									<p>
+										I am looking for a UI designer for an upcoming health app. We already have an established web presence and are now moving to the mobile space.
+									</p>
+									<p>
+										Have a nice day. Peter
+									</p>
+								</div>
+								<div class="mail-client__email-detail__response-container">
+									<div class="mail-client__email-detail__actions">
+										<div class="icon fa fa-font"></div>
+										<div class="icon fa fa-chain"></div>
+										<div class="icon fa fa-chain-broken"></div>
+									</div>
+								</div>
+							</div>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
