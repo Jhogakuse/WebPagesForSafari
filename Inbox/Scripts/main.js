@@ -3,6 +3,8 @@ var LabelEmail_1, LabelEmail_2, LabelEmail_3, LabelEmail_4, LabelEmail_5, LabelE
 var MessageEmail_0, MessageEmail_1, MessageEmail_2, MessageEmail_3, MessageEmail_4, MessageEmail_5, MessageEmail_6, MessageEmail_7, MessageEmail_8, MessageEmail_9, MessageEmail_10, 
 	MessageEmail_11, MessageEmail_12, MessageEmail_13, MessageEmail_14, MessageEmail_15, MessageEmail_16, MessageEmail_17, MessageEmail_18, MessageEmail_19, MessageEmail_20;
 var container = document.getElementsByClassName("sign-up");
+var firstEmail = false;
+var timmerSet;
 
 function getH() {
 	var pageHeight = window.innerHeight;
@@ -81,7 +83,7 @@ function Initialize() {
 	MessageEmail_19 = document.getElementById("MessageEmail_19");
 	MessageEmail_20 = document.getElementById("MessageEmail_20");
 
-	ShowSth(LabelEmail_1);
+	HideSth(LabelEmail_1);
 	ShowSth(LabelEmail_2);
 	ShowSth(LabelEmail_3);
 	ShowSth(LabelEmail_4);
@@ -137,78 +139,97 @@ function hammerIt_LabelEmail(element) {
             case LabelEmail_2:
             	HideMessageEmail();
             	ShowSth(MessageEmail_2);
+            	ReadEmail();
             break;
             case LabelEmail_3:
             	HideMessageEmail();
             	ShowSth(MessageEmail_3);
+            	ReadEmail();
             break;
             case LabelEmail_4:
             	HideMessageEmail();
             	ShowSth(MessageEmail_4);
+            	ReadEmail();
             break;
             case LabelEmail_5:
             	HideMessageEmail();
             	ShowSth(MessageEmail_5);
+            	ReadEmail();
             break;
             case LabelEmail_6:
             	HideMessageEmail();
             	ShowSth(MessageEmail_6);
+            	ReadEmail();
             break;
             case LabelEmail_7:
             	HideMessageEmail();
             	ShowSth(MessageEmail_7);
+            	ReadEmail();
             break;
             case LabelEmail_8:
             	HideMessageEmail();
             	ShowSth(MessageEmail_8);
+            	ReadEmail();
             break;
             case LabelEmail_9:
             	HideMessageEmail();
             	ShowSth(MessageEmail_9);
+            	ReadEmail();
             break;
             case LabelEmail_10:
             	HideMessageEmail();
             	ShowSth(MessageEmail_10);
+            	ReadEmail();
             break;
             case LabelEmail_11:
             	HideMessageEmail();
             	ShowSth(MessageEmail_11);
+            	ReadEmail();
             break;
             case LabelEmail_12:
             	HideMessageEmail();
             	ShowSth(MessageEmail_12);
+            	ReadEmail();
             break;
             case LabelEmail_13:
             	HideMessageEmail();
             	ShowSth(MessageEmail_13);
+            	ReadEmail();
             break;
             case LabelEmail_14:
             	HideMessageEmail();
             	ShowSth(MessageEmail_14);
+            	ReadEmail();
             break;
             case LabelEmail_15:
             	HideMessageEmail();
             	ShowSth(MessageEmail_15);
+            	ReadEmail();
             break;
             case LabelEmail_16:
             	HideMessageEmail();
             	ShowSth(MessageEmail_16);
+            	ReadEmail();
             break;
             case LabelEmail_17:
             	HideMessageEmail();
             	ShowSth(MessageEmail_17);
+            	ReadEmail();
             break;
             case LabelEmail_18:
             	HideMessageEmail();
             	ShowSth(MessageEmail_18);
+            	ReadEmail();
             break;
             case LabelEmail_19:
             	HideMessageEmail();
             	ShowSth(MessageEmail_19);
+            	ReadEmail();
             break;
             case LabelEmail_20:
             	HideMessageEmail();
             	ShowSth(MessageEmail_20);
+            	ReadEmail();
             break;
             default:
             break;
@@ -246,4 +267,20 @@ function HideSth(element) {
 
 function ShowSth(element) {
 	$(element).css("display", "block");
+}
+
+function ReadEmail() {
+	if (!firstEmail) {
+		firstEmail = true;
+		ShowEmail();
+	}
+}
+
+function ShowEmail() {
+    timmerSet = setTimeout(alertFunc, 3000);
+}
+
+function alertFunc() {
+    alert("Hello!");
+    firstEmail = false;
 }
