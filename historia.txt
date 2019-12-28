@@ -1,8 +1,7 @@
 En esta parte va el titulo
 
-En esta parte va el primer parrafo 
-o  la introducción
+En esta otra va el primer parrafo o  la introducción
 
-En esta va el desarrollo del tema
+En esa va el desarrollo del tema
 
-Y acá una conclusión y referencias
+Mañana continuaremos aquí
