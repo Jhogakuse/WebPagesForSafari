@@ -2,7 +2,7 @@ body{
     color: #333;
     text-align: center;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 }
@@ -18,4 +18,4 @@ body{
 #container h1{
     font-size: 20px;
     text-align: center;
-} 
+}
